@@ -12,28 +12,37 @@ export class NavBar {
   componentDidRender() {
     // Set the theme (either light or dark, controlled by a bool `light` flag).
     const themeButton = this.buttonElement.shadowRoot.getElementById('theme-button');
-    console.log(themeButton);
+    const currentTheme = localStorage.getItem('theme') ? localStorage.getItem('theme') : null;
 
-    function setTheme({ light = true }) {
-      if (light) {
+    if (currentTheme) {
+      if (currentTheme === 'light') {
         document.body.setAttribute('data-theme', 'light');
         themeButton.innerText = '🌙';
       } else {
         document.body.setAttribute('data-theme', 'dark');
         themeButton.innerText = '🌞';
       }
+    } else {
+      document.body.setAttribute('data-theme', 'light');
+      themeButton.innerText = '🌙';
     }
 
     // Toggle the theme when the user clicks the button.
     function toggleTheme() {
-      setTheme({
-        light: document.body.getAttribute('data-theme') !== 'light'
-      });
-    }
-    themeButton.onclick = toggleTheme;
+      const meme = document.body.getAttribute('data-theme');
+      if (meme === 'light') {
+        document.body.setAttribute('data-theme', 'dark');
+        themeButton.innerText = '🌞';
+        localStorage.setItem('theme', 'dark');
 
-    // Default to the light theme.
-    setTheme({ light: true });
+      } else {
+        document.body.setAttribute('data-theme', 'light');
+        themeButton.innerText = '🌙';
+        localStorage.setItem('theme', 'light');
+      }
+    }
+    
+    themeButton.onclick = toggleTheme;
   }
 
   render() {
