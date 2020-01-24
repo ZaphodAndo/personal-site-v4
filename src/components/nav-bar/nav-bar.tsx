@@ -17,8 +17,7 @@ export class NavBar {
           </stencil-route-link>
           <div class='profile-text'>
             <h1>Hi, i'm Ethan</h1>
-            <p>Destroyer of Builds, Remover of Strings,</p>
-            <p>Creator of lint errors.</p>        
+            <p>Destroyer of Builds, Remover of Strings, Creator of lint errors.</p>
           </div>
         </div>
 

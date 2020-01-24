@@ -82,3 +82,7 @@ a:hover {
   color: #4640FF;
   border-bottom: 2px solid #4640FF;
 }
+
+.p-link {
+  font-size: 16px;
+}

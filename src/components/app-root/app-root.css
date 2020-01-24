@@ -21,6 +21,12 @@ hr {
   margin: 0 0 150px 0;
 }
 
+@media (max-width: 768px) {
+  hr {
+    margin-bottom: 50px;
+  }
+}
+
 .container {
   max-width: 1140px;
   margin: 0 auto;

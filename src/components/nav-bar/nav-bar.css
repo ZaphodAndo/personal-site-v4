@@ -17,6 +17,8 @@
 
 .profile-text {
   margin-left: 15px;
+  max-width: 330px;
+  word-break: break-word;
 }
 
 .links {
@@ -54,4 +56,30 @@ a {
 a:hover {
   color: #4640FF;
   border-bottom: 2px solid #4640FF;
+}
+
+@media (max-width: 768px) {
+  .header {
+    flex-direction: column;
+    text-align: center;
+    margin-bottom: 50px;
+  }
+
+  .profile {
+    flex-direction: column;
+  }
+
+  .profile-text {
+    margin-left: 0;
+  }
+
+  .links {
+    margin-left: unset;
+    margin-right: unset;
+    margin-top: 20px;
+  }
+
+  a {
+    margin-left: 10px;
+  }
 }
