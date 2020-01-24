@@ -1,0 +1,57 @@
+.header {
+  display: flex;
+  align-items: center;
+}
+
+.profile {
+  display: flex;
+  align-items: center;
+}
+
+.profile a {
+  margin-left: 0;
+}
+.profile a:hover {
+  border-bottom: none;
+}
+
+.profile-text {
+  margin-left: 15px;
+}
+
+.links {
+  margin-left: auto;
+  margin-right: 0;
+}
+
+.blog-link {
+  margin-left: 0;
+}
+
+img {
+  width: 70px;
+  height: 70px;
+}
+
+h1 {
+  font-size: 20px;
+  margin: 0;
+  font-weight: bold;
+}
+
+p {
+  font-size: 16px;
+  margin: 0;
+  font-weight: 500;
+}
+
+a {
+  margin-left: 25px;
+  font-weight: 500;
+  text-decoration: none;
+  color: black;
+}
+a:hover {
+  color: #4640FF;
+  border-bottom: 2px solid #4640FF;
+}
