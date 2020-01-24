@@ -39,23 +39,33 @@ h1 {
   font-size: 20px;
   margin: 0;
   font-weight: bold;
+  color: var(--font-colour);
 }
 
 p {
   font-size: 16px;
   margin: 0;
   font-weight: 500;
+  color: var(--font-colour);
 }
 
 a {
   margin-left: 25px;
   font-weight: 500;
   text-decoration: none;
-  color: black;
+  color: var(--font-colour);
 }
 a:hover {
-  color: #4640FF;
-  border-bottom: 2px solid #4640FF;
+  color: var(--hover);
+  border-bottom: 2px solid var(--hover);
+}
+
+button {
+  margin-left: 25px;
+  background: unset;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
 }
 
 @media (max-width: 768px) {
@@ -81,5 +91,17 @@ a:hover {
 
   a {
     margin-left: 10px;
+  }
+
+  button {
+    margin-left: 10px;
+    background: unset;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+  }
+
+  p {
+    margin-top: 20px;
   }
 }

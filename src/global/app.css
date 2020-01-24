@@ -11,6 +11,16 @@
 
 :root {
   --gradient: linear-gradient(to right, #5183F5 25%, #4640FF 100%);
+  --font-colour: black;
+  --bg-colour: #fff;
+  --hover: #4640FF;
+}
+
+[data-theme="dark"] {
+  --gradient: linear-gradient(to right, #5183F5 25%, #4640FF 100%);
+  --font-colour: rgb(179, 185, 197);
+  --bg-colour: #121212;
+  --hover: #5183F5;
 }
 
 html {
@@ -21,4 +31,5 @@ body {
   margin: 0px;
   padding: 0px;
   font-family: 'Montserrat', sans-serif;
+  background-color: var(--bg-colour);
 }

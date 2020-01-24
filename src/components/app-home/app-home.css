@@ -22,6 +22,7 @@
   margin: 0 0 0 0;
   line-height: 2.5rem;
   font-weight: 400;
+  color: #fff;
 }
 
 .blog-title {
@@ -52,11 +53,13 @@ h2 {
 
 h3 {
   margin: 0;
+  color: var(--font-colour);
 }
 
 p {
   margin: 5px 0 0 0;
   font-weight: 500;
+  color: var(--font-colour);
 }
 
 .events {
@@ -74,15 +77,21 @@ p {
 a {
   margin: 0;
   text-decoration: none;
-  color: black;
+  color: var(--font-colour);;
   font-weight: bold;
   font-size: 1.17em;
 }
 a:hover {
-  color: #4640FF;
-  border-bottom: 2px solid #4640FF;
+  color: var(--hover);
+  border-bottom: 2px solid var(--hover);
 }
 
 .p-link {
   font-size: 16px;
+}
+
+@media (max-width: 768px) {
+  .app-home {
+    margin-top: 50px;
+  }
 }

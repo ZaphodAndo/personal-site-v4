@@ -1,4 +1,4 @@
-import { Component, h } from '@stencil/core';
+import { Component, h, Element } from '@stencil/core';
 
 
 @Component({
@@ -7,6 +7,34 @@ import { Component, h } from '@stencil/core';
   shadow: true
 })
 export class NavBar {
+  @Element() buttonElement: HTMLElement;
+
+  componentDidRender() {
+    // Set the theme (either light or dark, controlled by a bool `light` flag).
+    const themeButton = this.buttonElement.shadowRoot.getElementById('theme-button');
+    console.log(themeButton);
+
+    function setTheme({ light = true }) {
+      if (light) {
+        document.body.setAttribute('data-theme', 'light');
+        themeButton.innerText = '🌙';
+      } else {
+        document.body.setAttribute('data-theme', 'dark');
+        themeButton.innerText = '🌞';
+      }
+    }
+
+    // Toggle the theme when the user clicks the button.
+    function toggleTheme() {
+      setTheme({
+        light: document.body.getAttribute('data-theme') !== 'light'
+      });
+    }
+    themeButton.onclick = toggleTheme;
+
+    // Default to the light theme.
+    setTheme({ light: true });
+  }
 
   render() {
     return (
@@ -27,9 +55,9 @@ export class NavBar {
           </stencil-route-link>
           <a target='_blank' rel='noopener noreferrer' href='https://github.com/ZaphodAndo'>Github</a>
           <a target='_blank' rel='noopener noreferrer' href='https://twitter.com/ethan_ando'>Twitter</a>
-          <a target='_blank' rel='noopener noreferrer' href='https://www.linkedin.com/in/ethan-anderson-41ba9a172/'>LinkedIn</a>          
+          <a target='_blank' rel='noopener noreferrer' href='https://www.linkedin.com/in/ethan-anderson-41ba9a172/'>LinkedIn</a>
+          <button id='theme-button'>🌞</button>       
         </div>
-
       </div>
     );
   }
