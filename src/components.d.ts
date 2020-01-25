@@ -13,8 +13,12 @@ export namespace Components {
   interface AppBlog {
     'posts': any;
   }
-  interface AppHome {}
-  interface AppRoot {}
+  interface AppHome {
+    'posts': any;
+  }
+  interface AppRoot {
+    'posts': any;
+  }
   interface FirstPost {}
   interface GitSetup {}
   interface NavBar {}
@@ -80,8 +84,12 @@ declare namespace LocalJSX {
   interface AppBlog {
     'posts'?: any;
   }
-  interface AppHome {}
-  interface AppRoot {}
+  interface AppHome {
+    'posts'?: any;
+  }
+  interface AppRoot {
+    'posts'?: any;
+  }
   interface FirstPost {}
   interface GitSetup {}
   interface NavBar {}

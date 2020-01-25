@@ -44,7 +44,7 @@ export class NavBar {
       <div class='header'>
         <div class='profile'>
           <stencil-route-link url='/'>
-            <img src='../../assets/profile-image/profile-pic.png'></img>
+            <img src='../../assets/profile-image/profile-pic.png' alt='profile image'></img>
           </stencil-route-link>
           <div class='profile-text'>
             <h1>Hi, i'm Ethan</h1>

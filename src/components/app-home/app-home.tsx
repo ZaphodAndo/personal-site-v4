@@ -1,4 +1,5 @@
-import { Component, h } from '@stencil/core';
+import { Component, h, Prop } from '@stencil/core';
+import blogConfig from '../../blogConfig.jsx';
 
 @Component({
   tag: 'app-home',
@@ -6,6 +7,13 @@ import { Component, h } from '@stencil/core';
   shadow: true
 })
 export class AppHome {
+
+  @Prop() posts;
+
+  componentWillLoad() {
+    this.posts = blogConfig;
+    this.posts = this.posts.slice(Math.max(this.posts.length - 6, 0));
+  }
 
   render() {
     return (
@@ -17,24 +25,14 @@ export class AppHome {
 
         <div class='blog-posts'>
           <h2 class='blog-title'>Blog Posts</h2>
-          <div class='post'>
-            <stencil-route-link url='/blog/git-setup'>
-              <h3>Setting Up Git! - 07/08/19</h3>
-            </stencil-route-link>
-            <p>How to set up Git on Windows 💻</p>            
-          </div>
-          <div class='post'>
-            <stencil-route-link url='/blog/revamp-post'>
-              <h3>An original meme and a blast from the past! - 05/08/19</h3>
-            </stencil-route-link>
-            <p>Its an old meme sir but it still checks out</p>            
-          </div>
-          <div class='post'>
-            <stencil-route-link url='/blog/first-post'>
-              <h3>Welcome to my site - 05/08/19</h3>
-            </stencil-route-link>
-            <p>Something I will redesign hundreds of times only to make two posts</p>            
-          </div>
+            {this.posts.map(post => 
+              <div class='post'>
+                <stencil-route-link url={'/blog/' + post.tag}>
+                  <h3>{post.title} - {post.date}</h3>
+                </stencil-route-link>
+                <p>{post.desc}</p>            
+              </div>
+            )}
         </div>
 
         <div class='events'>

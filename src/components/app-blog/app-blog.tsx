@@ -10,9 +10,8 @@ export class AppProfile {
 
   @Prop() posts;
 
-  componentDidLoad() {
+  componentWillLoad() {
     this.posts = blogConfig;
-    console.log(this.posts);
   }
 
   render() {
