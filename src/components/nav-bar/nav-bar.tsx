@@ -10,26 +10,20 @@ export class NavBar {
   @Element() buttonElement: HTMLElement;
 
   componentDidRender() {
-    // Set the theme (either light or dark, controlled by a bool `light` flag).
     const themeButton = this.buttonElement.shadowRoot.getElementById('theme-button');
     const currentTheme = localStorage.getItem('theme') ? localStorage.getItem('theme') : null;
 
-    if (currentTheme) {
-      if (currentTheme === 'light') {
-        document.body.setAttribute('data-theme', 'light');
-        themeButton.innerText = '🌙';
-      } else {
-        document.body.setAttribute('data-theme', 'dark');
-        themeButton.innerText = '🌞';
-      }
+    if (currentTheme !== 'light') {
+      document.body.setAttribute('data-theme', 'dark');
+      themeButton.innerText = '🌞';
     } else {
       document.body.setAttribute('data-theme', 'light');
       themeButton.innerText = '🌙';
     }
 
-    // Toggle the theme when the user clicks the button.
     function toggleTheme() {
       const meme = document.body.getAttribute('data-theme');
+
       if (meme === 'light') {
         document.body.setAttribute('data-theme', 'dark');
         themeButton.innerText = '🌞';
@@ -41,7 +35,7 @@ export class NavBar {
         localStorage.setItem('theme', 'light');
       }
     }
-    
+
     themeButton.onclick = toggleTheme;
   }
 
