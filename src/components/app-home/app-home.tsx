@@ -38,7 +38,7 @@ export class AppHome {
         <div class='events'>
           <h2 class='events-title'>Events I Have Attended</h2>
           <p>
-            26/10/19 - HackTheMidlands 4.0 - This is a hackathon that I went to in Birmingham where me and my team created
+            26/10/19 - <a class='p-link' target='_blank' rel='noopener noreferrer' href='https://hackthemidlands.com/'>HackTheMidlands 4.0</a> - This is a hackathon that I went to in Birmingham where me and my team created
             <a class='p-link' target='_blank' rel='noopener noreferrer' href='https://github.com/kanaikimi/project-fanta'> this.</a>
           </p>
         </div>
