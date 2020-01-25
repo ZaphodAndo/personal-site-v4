@@ -1,12 +1,3 @@
-/*
-  Global App CSS
-  ----------------------
-  Use this file for styles that should be applied to all components.
-  For example, "font-family" within the "body" selector is a CSS property
-  most apps will want applied to all components.
-
-  Any global CSS variables should also be applied here.
-*/
 @import url('https://fonts.googleapis.com/css?family=Montserrat:400,500&display=swap');
 
 :root {
@@ -14,6 +5,7 @@
   --font-colour: black;
   --bg-colour: #fff;
   --hover: #4640FF;
+  --bg-code: #eee;
 }
 
 [data-theme="dark"] {
@@ -21,6 +13,7 @@
   --font-colour: rgb(179, 185, 197);
   --bg-colour: #121212;
   --hover: #5183F5;
+  --bg-code: #262626;
 }
 
 html {
