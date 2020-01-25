@@ -51,6 +51,14 @@ h2 {
   margin-top: 20px;
 }
 
+.post a {
+  font-weight: unset;
+  font-size: unset;
+}
+.post h3:hover {
+  color: var(--hover);
+}
+
 h3 {
   margin: 0;
   color: var(--font-colour);

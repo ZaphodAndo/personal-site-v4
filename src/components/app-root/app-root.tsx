@@ -19,7 +19,10 @@ export class AppRoot {
             <stencil-router>
               <stencil-route-switch scrollTopOffset={0}>
                 <stencil-route url='/' component='app-home' exact={true} />
-                <stencil-route url='/blog' component='app-blog' />
+                <stencil-route url='/blog' component='app-blog' exact={true} />
+                <stencil-route url='/blog/first-post' component='first-post' exact={true} />
+                <stencil-route url='/blog/git-setup' component='git-setup' exact={true} />
+                <stencil-route url='/blog/revamp-post' component='revamp-post' exact={true} />
               </stencil-route-switch>
             </stencil-router>
           </main>          
