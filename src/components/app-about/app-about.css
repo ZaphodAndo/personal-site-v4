@@ -95,6 +95,10 @@ a:hover {
     margin-top: 30px;
   }
 
+  h1 {
+    font-size: 2.3rem;
+  }
+
   img {
     display: none;
   }
