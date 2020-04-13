@@ -19,25 +19,25 @@ export class AppAbout {
         <div class='bottom-section'>
           <div class='content'>
             <p>
-              Bacon ipsum dolor amet swine doner chislic cow, jowl pork loin jerky tongue shank capicola bresaola. 
-              Salami ground round jerky, spare ribs sirloin beef ribs swine landjaeger short ribs hamburger filet 
-              mignon tongue beef ribeye andouille. Turducken capicola fatback beef frankfurter pancetta, buffalo 
-              t-bone salami bacon ham chicken ball tip. Prosciutto shankle ham short loin short ribs boudin porchetta 
-              ham hock chicken pork chop bresaola leberkas salami.
+              I’m an apprentice applications developer at a company called PebblePad. My preferred area is frontend 
+              web development using technologies such as JavaScript, TypeScript, and React etc. however I also delve 
+              into backend with .net and C # as well as a little bit of NodeJs.
             </p>
             <p>
-              Bacon ipsum dolor amet swine doner chislic cow, jowl pork loin jerky tongue shank capicola bresaola. 
-              Salami ground round jerky, spare ribs sirloin beef ribs swine landjaeger short ribs hamburger filet 
-              mignon tongue beef ribeye andouille. Turducken capicola fatback beef frankfurter pancetta, buffalo 
-              t-bone salami bacon ham chicken ball tip. Prosciutto shankle ham short loin short ribs boudin porchetta 
-              ham hock chicken pork chop bresaola leberkas salami.
+              Technologies and things that I would like to investigate and learn include <a target='_blank' rel='noopener noreferrer' href='https://flutter.dev/'>Flutter</a> a cross platform development 
+              framework, <a target='_blank' rel='noopener noreferrer' href='https://www.rust-lang.org/'>Rust</a> and <a target='_blank' rel='noopener noreferrer' href='https://webassembly.org/'>WASM</a>.
             </p>
             <p>
-              Bacon ipsum dolor amet swine doner chislic cow, jowl pork loin jerky tongue shank capicola bresaola. 
-              Salami ground round jerky, spare ribs sirloin beef ribs swine landjaeger short ribs hamburger filet 
-              mignon tongue beef ribeye andouille. Turducken capicola fatback beef frankfurter pancetta, buffalo 
-              t-bone salami bacon ham chicken ball tip. Prosciutto shankle ham short loin short ribs boudin porchetta 
-              ham hock chicken pork chop bresaola leberkas salami.
+              If I’m not staring at a screen coding then I’m probably staring at a screen doing something else whether 
+              that be gaming, reading or endlessly scrolling 
+              through <a target='_blank' rel='noopener noreferrer' href='https://twitter.com/ethan_ando'>twitter</a> and if I 
+              am coding I’m probably battling 
+              with type errors in typescript or rewording the same text for the fiftieth time.
+            </p>
+            <p>
+              This site is where I am going to collect a bunch of my thoughts and stuff I have learned as well as other 
+              interesting things I may have come across. I probably won’t be adding many posts here that often (if at all) 
+              in fact I will probably spend much more time redesigning it and changing it than writing posts.
             </p>
           </div>
 
@@ -46,7 +46,7 @@ export class AppAbout {
             <hr/>
             <p>Age <span>19</span></p>
             <p>Location <span>UK</span></p>
-            <p>Interests <span>Programming, tech, music, comics, movies, gaming, peanut M&Ms</span></p>
+            <p>Interests <span>Programming, tech, music, comics, movies, gaming, peanut M&Ms</span></p>
             <p>Work <a target='_blank' rel='noopener noreferrer' href='https://www.pebblepad.co.uk/'>PebblePad</a></p>
             <p>Pets <span>Two cats</span></p>
           </div>
