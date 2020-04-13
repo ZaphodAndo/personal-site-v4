@@ -21,6 +21,10 @@
   max-width: 450px;
 }
 
+.profile-text span {
+  color: var(--accent-colour);
+}
+
 img {
   width: 70px;
   height: 70px;

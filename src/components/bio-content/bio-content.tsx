@@ -12,7 +12,7 @@ export class BioContent {
       <div class='bio-content'>
         <div class='profile'>
           <div class='profile-text'>
-            <h1>Hi, i'm Ethan.</h1>
+            <h1>Hi, i'm <span>Ethan.</span></h1>
             <p>Destroyer of Builds, Remover of Strings, Creator of lint errors.</p>
           </div>
           <img src='../../assets/profile-image/profile-pic.png' alt='profile image'></img>
