@@ -1,6 +1,5 @@
 import { Component, h, Element } from '@stencil/core';
 
-
 @Component({
   tag: 'nav-bar',
   styleUrl: 'nav-bar.css',
@@ -42,24 +41,19 @@ export class NavBar {
   render() {
     return (
       <div class='header'>
-        <div class='profile'>
-          <stencil-route-link url='/'>
-            <img src='../../assets/profile-image/profile-pic.png' alt='profile image'></img>
-          </stencil-route-link>
-          <div class='profile-text'>
-            <h1>Hi, i'm Ethan</h1>
-            <p>Destroyer of Builds, Remover of Strings, Creator of lint errors.</p>
-          </div>
-        </div>
+        <stencil-route-link url='/'>
+          <a>Ethan Anderson</a>
+        </stencil-route-link>
 
-        <div class='links'>
-          <stencil-route-link url='/blog'>
-            <a class='blog-link'>Blog</a>
+        <div class='right-links'>
+          <stencil-route-link url='/about'>
+            <a>About</a>
           </stencil-route-link>
-          <a target='_blank' rel='noopener noreferrer' href='https://github.com/ZaphodAndo'>Github</a>
-          <a target='_blank' rel='noopener noreferrer' href='https://twitter.com/ethan_ando'>Twitter</a>
-          <a target='_blank' rel='noopener noreferrer' href='https://www.linkedin.com/in/ethan-anderson-41ba9a172/'>LinkedIn</a>
-          <button id='theme-button'>🌞</button>       
+
+          <stencil-route-link url='/blog' class='blog-link'>
+            <a>Blog</a>
+          </stencil-route-link>
+          <button id='theme-button'>🌞</button>        
         </div>
       </div>
     );

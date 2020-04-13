@@ -1,0 +1,78 @@
+.bio-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.profile {
+  display: flex;
+}
+
+.profile-text h1 {
+  font-weight: bold;
+  color: var(--header-colour);
+  margin: 0;
+}
+
+.profile-text p {
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: var(--text-colour-light);
+  margin: 0;
+  max-width: 450px;
+}
+
+.profile-text span {
+  color: var(--accent-colour);
+}
+
+img {
+  width: 70px;
+  height: 70px;
+  margin-left: auto;
+  margin-right: 0;
+}
+
+.links {
+  margin-top: 15px;
+}
+
+a {
+  font-weight: 500;
+  color: var(--header-colour);
+  text-decoration: none;
+  padding: 0.3rem 0.9rem 0.3rem 0.9rem;
+  border: solid 2px var(--outline-colour);
+  border-radius: 10px;
+  transition: all 0.2s ease-in-out 0s;
+}
+
+.github-link:hover {
+  background-color: #24292E;
+  border-color: #24292E;
+  color: var(--link-colour);
+}
+
+.linkedin-link:hover {
+  background-color: #0073B1;
+  border-color: #0073B1;
+  color: var(--link-colour);
+}
+
+.twitter-link {
+  margin: 0 0.6rem 0 0.6rem;
+}
+.twitter-link:hover {
+  background-color: #1DA1F2;
+  border-color: #1DA1F2;
+  color: var(--link-colour);
+}
+
+@media (max-width: 768px) {
+  img {
+    display: none;
+  }
+
+  a {
+    padding: 0.3rem 0.6rem 0.3rem 0.6rem;
+  }
+}

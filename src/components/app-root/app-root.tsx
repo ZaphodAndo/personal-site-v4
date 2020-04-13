@@ -1,5 +1,5 @@
 import { Component, h, Prop } from '@stencil/core';
-import blogConfig from '../../blogConfig.jsx';
+import linkConfig from '../../configs/linkConfig.js';
 
 
 @Component({
@@ -12,20 +12,19 @@ export class AppRoot {
   @Prop() posts;
 
   componentWillLoad() {
-    this.posts = blogConfig;
+    this.posts = linkConfig;
   }
 
   render() {
     return (
       <div>
-        <hr />
         <div class='container'>
           <nav-bar></nav-bar>
-
           <main>
             <stencil-router>
               <stencil-route-switch scrollTopOffset={0}>
                 <stencil-route url='/' component='app-home' exact={true} />
+                <stencil-route url='/about' component='app-about' exact={true} />
                 <stencil-route url='/blog' component='app-blog' exact={true} />
                 {this.posts.map(post => 
                   <stencil-route url={'/blog/' + post.tag} component={post.tag} exact={true} />

@@ -1,33 +1,39 @@
 import { Component, h, Prop } from '@stencil/core';
-import blogConfig from '../../blogConfig.jsx';
+import blogConfig from '../../configs/blogConfig.js';
 
 @Component({
   tag: 'app-blog',
   styleUrl: 'app-blog.css',
   shadow: true
 })
-export class AppProfile {
+export class AppBlog {
 
-  @Prop() posts;
+  @Prop() years;
 
   componentWillLoad() {
-    this.posts = blogConfig;
+    this.years = blogConfig;
   }
 
   render() {
     return (
       <div class="app-blog">
-        <div class='blog-posts'>
-          <h2 class='blog-title'>Blog Posts</h2>
-            {this.posts.map(post => 
+        {this.years.map(year => 
+          <div>
+            <div class='year-section'>
+              <h1 id={year[0]}>{year[0]}</h1>
+              <hr/>                
+            </div>
+            {year.map(post => 
               <div class='post'>
                 <stencil-route-link url={'/blog/' + post.tag}>
-                  <h3>{post.title} - {post.date}</h3>
+                  <h2 class='post-title'>{post.title}</h2>
                 </stencil-route-link>
-                <p>{post.desc}</p>            
+                <p class='description'>{post.desc}</p>   
+                <p class='date'>{post.date}</p>         
               </div>
             )}
-        </div>
+          </div>
+        )}
       </div>
     );
   }

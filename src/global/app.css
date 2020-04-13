@@ -1,19 +1,21 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat:400,500&display=swap');
 
 :root {
-  --gradient: linear-gradient(to right, #5183F5 25%, #4640FF 100%);
-  --font-colour: black;
   --bg-colour: #fff;
-  --hover: #4640FF;
-  --bg-code: #eee;
+  --link-colour: #fff;
+  --header-colour: #0E153A;
+  --text-colour-light: #6f757b;
+  --accent-colour: #5183f5;
+  --outline-colour: #D0D0D0;
 }
 
 [data-theme="dark"] {
-  --gradient: linear-gradient(to right, #5183F5 25%, #4640FF 100%);
-  --font-colour: rgb(179, 185, 197);
-  --bg-colour: #121212;
-  --hover: #5183F5;
-  --bg-code: #262626;
+  --bg-colour: #161617;
+  --link-colour: #fff;
+  --header-colour: #fff;
+  --text-colour-light: #b3b9c5;
+  --accent-colour: #5183f5;
+  --outline-colour: #D0D0D0;
 }
 
 html {

@@ -1,109 +1,29 @@
 .app-home {
-  margin-top: 90px;
-  margin-bottom: 90px;
+  margin-top: 100px;
+  margin-bottom: 100px;
 }
 
-.about-me {
-  background-image: var(--gradient);
-  box-shadow: 1px 1px 10px black;
-  border-radius: 10px;
-  padding: 15px;
-  color: white;
-  margin-bottom: 90px;
+.lists {
+  display: flex;
+  flex-direction: row;
 }
 
-.about-title {
-  font-size: 35px;
-  margin: 0 0 0.5rem 0;
-}
-
-.about-desc {
-  font-size: 20px;
-  margin: 0 0 0 0;
-  line-height: 2rem;
-  font-weight: 400;
-  color: #fff;
-}
-
-.blog-title {
-  background-color: #9295FF;
-  max-width: 135px;
-}
-
-.events-title {
-  background-color: #88FFC5;
-  max-width: 295px;
-}
-
-.projects-title {
-  background-color: #E592FF;
-  max-width: 105px;
-}
-
-h2 {
-  margin-left: 0;
-  margin-bottom: 25px;
-  padding: 5px;
-  border-radius: 10px;
-}
-
-.post {
-  margin-top: 20px;
-}
-
-.post a {
-  font-weight: unset;
-  font-size: unset;
-}
-.post h3:hover {
-  color: var(--hover);
-}
-
-h3 {
-  margin: 0;
-  color: var(--font-colour);
-}
-
-p {
-  margin: 5px 0 0 0;
-  font-weight: 500;
-  color: var(--font-colour);
-}
-
-.events {
-  margin-top: 50px;
-}
-
-.projects {
-  margin-top: 50px;
-}
-
-.project {
-  margin-top: 20px;
-}
-
-.project a {
-  color: var(--font-colour);
-}
-
-a {
-  margin: 0;
-  text-decoration: none;
-  color: var(--hover);
-  font-weight: bold;
-  font-size: 1.17em;
-}
-a:hover {
-  color: var(--hover);
-  border-bottom: 2px solid var(--hover);
-}
-
-.p-link {
-  font-size: 16px;
+.project-holder {
+  margin-right: 0;
+  margin-left: auto;
 }
 
 @media (max-width: 768px) {
   .app-home {
-    margin-top: 50px;
+    margin-top: 30px;
+  }
+
+  .lists {
+    flex-direction: column;
+  }
+
+  .project-holder {
+    margin-right: unset;
+    margin-left: unset;
   }
 }

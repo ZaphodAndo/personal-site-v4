@@ -10,23 +10,33 @@ import { HTMLStencilElement, JSXBase } from '@stencil/core/internal';
 
 
 export namespace Components {
+  interface AppAbout {}
   interface AppBlog {
-    'posts': any;
+    'years': any;
   }
-  interface AppHome {
-    'posts': any;
-  }
+  interface AppHome {}
   interface AppRoot {
     'posts': any;
   }
+  interface BioContent {}
   interface FirstPost {}
   interface GitSetup {}
+  interface HomePosts {
+    'posts': any;
+  }
   interface NavBar {}
+  interface ProjectList {}
   interface RevampPost {}
 }
 
 declare global {
 
+
+  interface HTMLAppAboutElement extends Components.AppAbout, HTMLStencilElement {}
+  var HTMLAppAboutElement: {
+    prototype: HTMLAppAboutElement;
+    new (): HTMLAppAboutElement;
+  };
 
   interface HTMLAppBlogElement extends Components.AppBlog, HTMLStencilElement {}
   var HTMLAppBlogElement: {
@@ -46,6 +56,12 @@ declare global {
     new (): HTMLAppRootElement;
   };
 
+  interface HTMLBioContentElement extends Components.BioContent, HTMLStencilElement {}
+  var HTMLBioContentElement: {
+    prototype: HTMLBioContentElement;
+    new (): HTMLBioContentElement;
+  };
+
   interface HTMLFirstPostElement extends Components.FirstPost, HTMLStencilElement {}
   var HTMLFirstPostElement: {
     prototype: HTMLFirstPostElement;
@@ -58,10 +74,22 @@ declare global {
     new (): HTMLGitSetupElement;
   };
 
+  interface HTMLHomePostsElement extends Components.HomePosts, HTMLStencilElement {}
+  var HTMLHomePostsElement: {
+    prototype: HTMLHomePostsElement;
+    new (): HTMLHomePostsElement;
+  };
+
   interface HTMLNavBarElement extends Components.NavBar, HTMLStencilElement {}
   var HTMLNavBarElement: {
     prototype: HTMLNavBarElement;
     new (): HTMLNavBarElement;
+  };
+
+  interface HTMLProjectListElement extends Components.ProjectList, HTMLStencilElement {}
+  var HTMLProjectListElement: {
+    prototype: HTMLProjectListElement;
+    new (): HTMLProjectListElement;
   };
 
   interface HTMLRevampPostElement extends Components.RevampPost, HTMLStencilElement {}
@@ -70,38 +98,50 @@ declare global {
     new (): HTMLRevampPostElement;
   };
   interface HTMLElementTagNameMap {
+    'app-about': HTMLAppAboutElement;
     'app-blog': HTMLAppBlogElement;
     'app-home': HTMLAppHomeElement;
     'app-root': HTMLAppRootElement;
+    'bio-content': HTMLBioContentElement;
     'first-post': HTMLFirstPostElement;
     'git-setup': HTMLGitSetupElement;
+    'home-posts': HTMLHomePostsElement;
     'nav-bar': HTMLNavBarElement;
+    'project-list': HTMLProjectListElement;
     'revamp-post': HTMLRevampPostElement;
   }
 }
 
 declare namespace LocalJSX {
+  interface AppAbout {}
   interface AppBlog {
-    'posts'?: any;
+    'years'?: any;
   }
-  interface AppHome {
-    'posts'?: any;
-  }
+  interface AppHome {}
   interface AppRoot {
     'posts'?: any;
   }
+  interface BioContent {}
   interface FirstPost {}
   interface GitSetup {}
+  interface HomePosts {
+    'posts'?: any;
+  }
   interface NavBar {}
+  interface ProjectList {}
   interface RevampPost {}
 
   interface IntrinsicElements {
+    'app-about': AppAbout;
     'app-blog': AppBlog;
     'app-home': AppHome;
     'app-root': AppRoot;
+    'bio-content': BioContent;
     'first-post': FirstPost;
     'git-setup': GitSetup;
+    'home-posts': HomePosts;
     'nav-bar': NavBar;
+    'project-list': ProjectList;
     'revamp-post': RevampPost;
   }
 }
@@ -112,12 +152,16 @@ export { LocalJSX as JSX };
 declare module "@stencil/core" {
   export namespace JSX {
     interface IntrinsicElements {
+      'app-about': LocalJSX.AppAbout & JSXBase.HTMLAttributes<HTMLAppAboutElement>;
       'app-blog': LocalJSX.AppBlog & JSXBase.HTMLAttributes<HTMLAppBlogElement>;
       'app-home': LocalJSX.AppHome & JSXBase.HTMLAttributes<HTMLAppHomeElement>;
       'app-root': LocalJSX.AppRoot & JSXBase.HTMLAttributes<HTMLAppRootElement>;
+      'bio-content': LocalJSX.BioContent & JSXBase.HTMLAttributes<HTMLBioContentElement>;
       'first-post': LocalJSX.FirstPost & JSXBase.HTMLAttributes<HTMLFirstPostElement>;
       'git-setup': LocalJSX.GitSetup & JSXBase.HTMLAttributes<HTMLGitSetupElement>;
+      'home-posts': LocalJSX.HomePosts & JSXBase.HTMLAttributes<HTMLHomePostsElement>;
       'nav-bar': LocalJSX.NavBar & JSXBase.HTMLAttributes<HTMLNavBarElement>;
+      'project-list': LocalJSX.ProjectList & JSXBase.HTMLAttributes<HTMLProjectListElement>;
       'revamp-post': LocalJSX.RevampPost & JSXBase.HTMLAttributes<HTMLRevampPostElement>;
     }
   }
