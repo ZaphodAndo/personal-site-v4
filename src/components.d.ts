@@ -10,6 +10,7 @@ import { HTMLStencilElement, JSXBase } from '@stencil/core/internal';
 
 
 export namespace Components {
+  interface AppAbout {}
   interface AppBlog {
     'years': any;
   }
@@ -30,6 +31,12 @@ export namespace Components {
 
 declare global {
 
+
+  interface HTMLAppAboutElement extends Components.AppAbout, HTMLStencilElement {}
+  var HTMLAppAboutElement: {
+    prototype: HTMLAppAboutElement;
+    new (): HTMLAppAboutElement;
+  };
 
   interface HTMLAppBlogElement extends Components.AppBlog, HTMLStencilElement {}
   var HTMLAppBlogElement: {
@@ -91,6 +98,7 @@ declare global {
     new (): HTMLRevampPostElement;
   };
   interface HTMLElementTagNameMap {
+    'app-about': HTMLAppAboutElement;
     'app-blog': HTMLAppBlogElement;
     'app-home': HTMLAppHomeElement;
     'app-root': HTMLAppRootElement;
@@ -105,6 +113,7 @@ declare global {
 }
 
 declare namespace LocalJSX {
+  interface AppAbout {}
   interface AppBlog {
     'years'?: any;
   }
@@ -123,6 +132,7 @@ declare namespace LocalJSX {
   interface RevampPost {}
 
   interface IntrinsicElements {
+    'app-about': AppAbout;
     'app-blog': AppBlog;
     'app-home': AppHome;
     'app-root': AppRoot;
@@ -142,6 +152,7 @@ export { LocalJSX as JSX };
 declare module "@stencil/core" {
   export namespace JSX {
     interface IntrinsicElements {
+      'app-about': LocalJSX.AppAbout & JSXBase.HTMLAttributes<HTMLAppAboutElement>;
       'app-blog': LocalJSX.AppBlog & JSXBase.HTMLAttributes<HTMLAppBlogElement>;
       'app-home': LocalJSX.AppHome & JSXBase.HTMLAttributes<HTMLAppHomeElement>;
       'app-root': LocalJSX.AppRoot & JSXBase.HTMLAttributes<HTMLAppRootElement>;

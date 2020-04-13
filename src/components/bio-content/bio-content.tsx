@@ -5,7 +5,7 @@ import { Component, h } from '@stencil/core';
   styleUrl: 'bio-content.css',
   shadow: true
 })
-export class NavBar {
+export class BioContent {
 
   render() {
     return (

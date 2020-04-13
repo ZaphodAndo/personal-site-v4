@@ -6,7 +6,7 @@ import blogConfig from '../../configs/blogConfig.js';
   styleUrl: 'app-blog.css',
   shadow: true
 })
-export class AppProfile {
+export class AppBlog {
 
   @Prop() years;
 

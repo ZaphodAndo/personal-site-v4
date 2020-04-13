@@ -6,7 +6,7 @@ import linkConfig from '../../configs/linkConfig.js';
   styleUrl: 'home-posts.css',
   shadow: true
 })
-export class NavBar {
+export class HomePosts {
 
   @Prop() posts;
 

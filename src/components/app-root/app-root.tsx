@@ -24,6 +24,7 @@ export class AppRoot {
             <stencil-router>
               <stencil-route-switch scrollTopOffset={0}>
                 <stencil-route url='/' component='app-home' exact={true} />
+                <stencil-route url='/about' component='app-about' exact={true} />
                 <stencil-route url='/blog' component='app-blog' exact={true} />
                 {this.posts.map(post => 
                   <stencil-route url={'/blog/' + post.tag} component={post.tag} exact={true} />

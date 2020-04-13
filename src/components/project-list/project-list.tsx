@@ -5,7 +5,7 @@ import { Component, h } from '@stencil/core';
   styleUrl: 'project-list.css',
   shadow: true
 })
-export class NavBar {
+export class ProjectList {
   render() {
     return (
       <div class='project-list'>
