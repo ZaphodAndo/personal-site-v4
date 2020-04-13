@@ -68,3 +68,9 @@ p {
   border-color: var(--accent-colour);
   color: var(--bg-colour);
 }
+
+@media (max-width: 768px) {
+  .home-posts {
+    margin-top: 50px;
+  }
+}

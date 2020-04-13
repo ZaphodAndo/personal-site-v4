@@ -65,3 +65,13 @@ p {
   border-color: var(--accent-colour);
   color: var(--bg-colour);
 }
+
+@media (max-width: 768px) {
+  .project-list {
+    margin-top: 50px;
+  }
+
+  .project {
+    padding: 15px;
+  }
+}
