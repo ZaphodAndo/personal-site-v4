@@ -18,10 +18,8 @@ export class AppRoot {
   render() {
     return (
       <div>
-        <hr />
         <div class='container'>
           <nav-bar></nav-bar>
-
           <main>
             <stencil-router>
               <stencil-route-switch scrollTopOffset={0}>

@@ -1,19 +1,19 @@
 const blogConfig = [
   {
     "title": "Welcome to my site",
-    "date": "05/08/19",
+    "date": "5th August 2019",
     "desc": "Something I will redesign hundreds of times only to make two posts",
     "tag": "first-post"
   },
   {
     "title": "Setting Up Git!",
-    "date": "07/08/19",
+    "date": "7th August 2019",
     "desc": "How to set up Git on Windows 💻",
     "tag": "git-setup"
   },
   {
     "title": "Welcome to my site Again!!",
-    "date": "25/01/20",
+    "date": "25th Janurary 2020",
     "desc": "This is like the 4th maybe 5th design now",
     "tag": "revamp-post"
   }

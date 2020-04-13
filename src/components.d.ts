@@ -13,15 +13,18 @@ export namespace Components {
   interface AppBlog {
     'posts': any;
   }
-  interface AppHome {
-    'posts': any;
-  }
+  interface AppHome {}
   interface AppRoot {
     'posts': any;
   }
+  interface BioContent {}
   interface FirstPost {}
   interface GitSetup {}
+  interface HomePosts {
+    'posts': any;
+  }
   interface NavBar {}
+  interface ProjectList {}
   interface RevampPost {}
 }
 
@@ -46,6 +49,12 @@ declare global {
     new (): HTMLAppRootElement;
   };
 
+  interface HTMLBioContentElement extends Components.BioContent, HTMLStencilElement {}
+  var HTMLBioContentElement: {
+    prototype: HTMLBioContentElement;
+    new (): HTMLBioContentElement;
+  };
+
   interface HTMLFirstPostElement extends Components.FirstPost, HTMLStencilElement {}
   var HTMLFirstPostElement: {
     prototype: HTMLFirstPostElement;
@@ -58,10 +67,22 @@ declare global {
     new (): HTMLGitSetupElement;
   };
 
+  interface HTMLHomePostsElement extends Components.HomePosts, HTMLStencilElement {}
+  var HTMLHomePostsElement: {
+    prototype: HTMLHomePostsElement;
+    new (): HTMLHomePostsElement;
+  };
+
   interface HTMLNavBarElement extends Components.NavBar, HTMLStencilElement {}
   var HTMLNavBarElement: {
     prototype: HTMLNavBarElement;
     new (): HTMLNavBarElement;
+  };
+
+  interface HTMLProjectListElement extends Components.ProjectList, HTMLStencilElement {}
+  var HTMLProjectListElement: {
+    prototype: HTMLProjectListElement;
+    new (): HTMLProjectListElement;
   };
 
   interface HTMLRevampPostElement extends Components.RevampPost, HTMLStencilElement {}
@@ -73,9 +94,12 @@ declare global {
     'app-blog': HTMLAppBlogElement;
     'app-home': HTMLAppHomeElement;
     'app-root': HTMLAppRootElement;
+    'bio-content': HTMLBioContentElement;
     'first-post': HTMLFirstPostElement;
     'git-setup': HTMLGitSetupElement;
+    'home-posts': HTMLHomePostsElement;
     'nav-bar': HTMLNavBarElement;
+    'project-list': HTMLProjectListElement;
     'revamp-post': HTMLRevampPostElement;
   }
 }
@@ -84,24 +108,30 @@ declare namespace LocalJSX {
   interface AppBlog {
     'posts'?: any;
   }
-  interface AppHome {
-    'posts'?: any;
-  }
+  interface AppHome {}
   interface AppRoot {
     'posts'?: any;
   }
+  interface BioContent {}
   interface FirstPost {}
   interface GitSetup {}
+  interface HomePosts {
+    'posts'?: any;
+  }
   interface NavBar {}
+  interface ProjectList {}
   interface RevampPost {}
 
   interface IntrinsicElements {
     'app-blog': AppBlog;
     'app-home': AppHome;
     'app-root': AppRoot;
+    'bio-content': BioContent;
     'first-post': FirstPost;
     'git-setup': GitSetup;
+    'home-posts': HomePosts;
     'nav-bar': NavBar;
+    'project-list': ProjectList;
     'revamp-post': RevampPost;
   }
 }
@@ -115,9 +145,12 @@ declare module "@stencil/core" {
       'app-blog': LocalJSX.AppBlog & JSXBase.HTMLAttributes<HTMLAppBlogElement>;
       'app-home': LocalJSX.AppHome & JSXBase.HTMLAttributes<HTMLAppHomeElement>;
       'app-root': LocalJSX.AppRoot & JSXBase.HTMLAttributes<HTMLAppRootElement>;
+      'bio-content': LocalJSX.BioContent & JSXBase.HTMLAttributes<HTMLBioContentElement>;
       'first-post': LocalJSX.FirstPost & JSXBase.HTMLAttributes<HTMLFirstPostElement>;
       'git-setup': LocalJSX.GitSetup & JSXBase.HTMLAttributes<HTMLGitSetupElement>;
+      'home-posts': LocalJSX.HomePosts & JSXBase.HTMLAttributes<HTMLHomePostsElement>;
       'nav-bar': LocalJSX.NavBar & JSXBase.HTMLAttributes<HTMLNavBarElement>;
+      'project-list': LocalJSX.ProjectList & JSXBase.HTMLAttributes<HTMLProjectListElement>;
       'revamp-post': LocalJSX.RevampPost & JSXBase.HTMLAttributes<HTMLRevampPostElement>;
     }
   }
