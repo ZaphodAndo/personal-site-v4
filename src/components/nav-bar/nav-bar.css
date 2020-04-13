@@ -18,7 +18,15 @@ a:hover {
 }
 
 .blog-link {
-  margin-left: 2.5rem;
+  margin: 0 2.5rem 0 2.5rem;
+}
+
+button {
+  background: unset;
+  border: none;
+  cursor: pointer;
+  font-size: 1.3rem;
+  padding: 0;
 }
 
 @media (max-width: 768px) {
@@ -39,6 +47,6 @@ a:hover {
   }
 
   .blog-link {
-    margin-left: 1.5rem;
+    margin: 0 1.5rem 0 1.5rem;
   }
 }

@@ -53,7 +53,7 @@ p {
 .view-more {
   font-weight: 500;
   font-size: 1rem;
-  color: var(--accent-colour);
+  color: var(--header-colour);
   border: solid 2px var(--outline-colour);
   border-radius: 10px;
   text-align: center;
@@ -64,7 +64,7 @@ p {
 .view-more:hover {
   background-color: var(--accent-colour);
   border-color: var(--accent-colour);
-  color: var(--bg-colour);
+  color: var(--link-colour);
 }
 
 @media (max-width: 768px) {
