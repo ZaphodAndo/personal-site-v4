@@ -9,7 +9,7 @@
 }
 
 h1 {
-  color: var(--header-colour);
+  color: var(--accent-colour);
 }
 
 hr {
@@ -27,8 +27,12 @@ a {
 h2 {
   font-weight: bold;
   font-size: 2rem;
-  color: var(--accent-colour);
+  color: var(--header-colour);
   margin: 0;
+  transition: all 0.2s ease-in-out 0s;
+}
+h2:hover {
+  color: var(--accent-colour);
 }
 
 p {
