@@ -1,5 +1,5 @@
 import { Component, h, Prop } from '@stencil/core';
-import blogConfig from '../../blogConfig.jsx';
+import linkConfig from '../../configs/linkConfig.js';
 
 @Component({
   tag: 'home-posts',
@@ -11,7 +11,7 @@ export class NavBar {
   @Prop() posts;
 
   componentWillLoad() {
-    this.posts = blogConfig;
+    this.posts = linkConfig;
     this.posts = this.posts.slice(Math.max(this.posts.length - 6, 0));
   }
 

@@ -1,5 +1,5 @@
 import { Component, h, Prop } from '@stencil/core';
-import blogConfig from '../../blogConfig.jsx';
+import linkConfig from '../../configs/linkConfig.js';
 
 
 @Component({
@@ -12,7 +12,7 @@ export class AppRoot {
   @Prop() posts;
 
   componentWillLoad() {
-    this.posts = blogConfig;
+    this.posts = linkConfig;
   }
 
   render() {

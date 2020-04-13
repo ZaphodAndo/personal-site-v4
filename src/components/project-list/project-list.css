@@ -42,6 +42,7 @@ a:hover {
 p {
   color: var(--text-colour-light);
   margin: 8px 0 8px 0;
+  font-weight: 500;
 }
 
 .view-more-holder {

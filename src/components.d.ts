@@ -11,7 +11,7 @@ import { HTMLStencilElement, JSXBase } from '@stencil/core/internal';
 
 export namespace Components {
   interface AppBlog {
-    'posts': any;
+    'years': any;
   }
   interface AppHome {}
   interface AppRoot {
@@ -106,7 +106,7 @@ declare global {
 
 declare namespace LocalJSX {
   interface AppBlog {
-    'posts'?: any;
+    'years'?: any;
   }
   interface AppHome {}
   interface AppRoot {

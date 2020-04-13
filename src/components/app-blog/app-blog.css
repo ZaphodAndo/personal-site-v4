@@ -3,42 +3,50 @@
   margin-bottom: 90px;
 }
 
-.blog-title {
-  background-color: #9295FF;
-  max-width: 135px;
+.year-section {
+  display: flex;
+  align-items: center;
 }
 
-.post {
-  margin-top: 20px;
+h1 {
+  color: var(--header-colour);
 }
 
-h2 {
-  margin-left: 0;
-  margin-bottom: 25px;
-  padding: 5px;
-  border-radius: 10px;
-}
-
-h3 {
-  margin: 0;
-  color: var(--font-colour);
-}
-h3:hover {
-  color: var(--hover);
-}
-
-p {
-  margin: 5px 0 0 0;
-  font-weight: 500;
-  color: var(--font-colour);
+hr {
+  width: 36rem;
+  height: 2px;
+  margin: 0 0 0.1rem 1rem;
+  background-color: var(--outline-colour);
+  border: none;
 }
 
 a {
   text-decoration: none;
 }
 
+h2 {
+  font-weight: bold;
+  font-size: 2rem;
+  color: var(--accent-colour);
+  margin: 0;
+}
+
+p {
+  color: var(--text-colour-light);
+  margin: 8px 0 8px 0;
+  font-weight: 500;
+}
+
+.description {
+  font-size: 1.2rem;
+}
+
+.date {
+  font-size: 1rem;
+}
+
 @media (max-width: 768px) {
   .app-blog {
-    margin-top: 50px;
+    margin-top: 30px;
   }
 }
