@@ -18,6 +18,7 @@ export namespace Components {
   interface AppRoot {
     'posts': any;
   }
+  interface ArmMigration {}
   interface BioContent {}
   interface FirstPost {}
   interface GitSetup {}
@@ -26,7 +27,6 @@ export namespace Components {
   }
   interface NavBar {}
   interface ProjectList {}
-  interface RevampPost {}
 }
 
 declare global {
@@ -54,6 +54,12 @@ declare global {
   var HTMLAppRootElement: {
     prototype: HTMLAppRootElement;
     new (): HTMLAppRootElement;
+  };
+
+  interface HTMLArmMigrationElement extends Components.ArmMigration, HTMLStencilElement {}
+  var HTMLArmMigrationElement: {
+    prototype: HTMLArmMigrationElement;
+    new (): HTMLArmMigrationElement;
   };
 
   interface HTMLBioContentElement extends Components.BioContent, HTMLStencilElement {}
@@ -91,24 +97,18 @@ declare global {
     prototype: HTMLProjectListElement;
     new (): HTMLProjectListElement;
   };
-
-  interface HTMLRevampPostElement extends Components.RevampPost, HTMLStencilElement {}
-  var HTMLRevampPostElement: {
-    prototype: HTMLRevampPostElement;
-    new (): HTMLRevampPostElement;
-  };
   interface HTMLElementTagNameMap {
     'app-about': HTMLAppAboutElement;
     'app-blog': HTMLAppBlogElement;
     'app-home': HTMLAppHomeElement;
     'app-root': HTMLAppRootElement;
+    'arm-migration': HTMLArmMigrationElement;
     'bio-content': HTMLBioContentElement;
     'first-post': HTMLFirstPostElement;
     'git-setup': HTMLGitSetupElement;
     'home-posts': HTMLHomePostsElement;
     'nav-bar': HTMLNavBarElement;
     'project-list': HTMLProjectListElement;
-    'revamp-post': HTMLRevampPostElement;
   }
 }
 
@@ -121,6 +121,7 @@ declare namespace LocalJSX {
   interface AppRoot {
     'posts'?: any;
   }
+  interface ArmMigration {}
   interface BioContent {}
   interface FirstPost {}
   interface GitSetup {}
@@ -129,20 +130,19 @@ declare namespace LocalJSX {
   }
   interface NavBar {}
   interface ProjectList {}
-  interface RevampPost {}
 
   interface IntrinsicElements {
     'app-about': AppAbout;
     'app-blog': AppBlog;
     'app-home': AppHome;
     'app-root': AppRoot;
+    'arm-migration': ArmMigration;
     'bio-content': BioContent;
     'first-post': FirstPost;
     'git-setup': GitSetup;
     'home-posts': HomePosts;
     'nav-bar': NavBar;
     'project-list': ProjectList;
-    'revamp-post': RevampPost;
   }
 }
 
@@ -156,13 +156,13 @@ declare module "@stencil/core" {
       'app-blog': LocalJSX.AppBlog & JSXBase.HTMLAttributes<HTMLAppBlogElement>;
       'app-home': LocalJSX.AppHome & JSXBase.HTMLAttributes<HTMLAppHomeElement>;
       'app-root': LocalJSX.AppRoot & JSXBase.HTMLAttributes<HTMLAppRootElement>;
+      'arm-migration': LocalJSX.ArmMigration & JSXBase.HTMLAttributes<HTMLArmMigrationElement>;
       'bio-content': LocalJSX.BioContent & JSXBase.HTMLAttributes<HTMLBioContentElement>;
       'first-post': LocalJSX.FirstPost & JSXBase.HTMLAttributes<HTMLFirstPostElement>;
       'git-setup': LocalJSX.GitSetup & JSXBase.HTMLAttributes<HTMLGitSetupElement>;
       'home-posts': LocalJSX.HomePosts & JSXBase.HTMLAttributes<HTMLHomePostsElement>;
       'nav-bar': LocalJSX.NavBar & JSXBase.HTMLAttributes<HTMLNavBarElement>;
       'project-list': LocalJSX.ProjectList & JSXBase.HTMLAttributes<HTMLProjectListElement>;
-      'revamp-post': LocalJSX.RevampPost & JSXBase.HTMLAttributes<HTMLRevampPostElement>;
     }
   }
 }
