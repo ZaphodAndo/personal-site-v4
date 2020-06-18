@@ -12,7 +12,7 @@ export class RevampPost {
         <div class="meta-info">
           <h1>The Great ARM Migration!</h1>
           <p class="description">
-            Some thoughts on Apples move from intel to ARM for Mac's
+            Some thoughts on Apples move from intel to ARM for Macs
           </p>
           <p class="date">18th June 2020</p>
         </div>
@@ -52,7 +52,7 @@ export class RevampPost {
         <p>
           The effects of this move will probably be quite profound as for Mac
           users it could result in much more power efficient Macs due to ARM’s
-          architecture but also potentially more powerful Mac’s depending on how
+          architecture but also potentially more powerful Macs depending on how
           well Apple’s custom processors perform in a Mac. They have already
           proved that they can make amazing processors for the iPhone and iPad
           so it will be interesting to see how well they fare with something
@@ -161,7 +161,7 @@ export class RevampPost {
           running on the Mac will be built to run on their very own ARM
           processors, the same sort of processors that Apple uses in the iPad.
           Apple has also been pushing SwiftUI which is a development framework
-          that allows devs to create apps that function and scale across apples
+          that allows devs to create apps that function and scale across Apples
           portfolio of products. This could eventually lead to the apps on iPad
           and the apps on Mac converging to the point where both devices
           literally run the same software. In some ways this is already
@@ -169,7 +169,7 @@ export class RevampPost {
           Mac.
         </p>
         <p>
-          Maybe i'm reading too much into this but over the years Apple has
+          Maybe I'm reading too much into this but over the years Apple has
           increasingly been neglecting the Mac line and has instead continuously
           been trying to push the iPad as a real computer and I feel that maybe
           in the next ten years we could see the end of the Mac… or maybe things
@@ -181,10 +181,10 @@ export class RevampPost {
         <h2>The end</h2>
         <p>
           In conclusion Apple moving from intel to ARM is very exciting but not
-          without its ups and downs, however only time will tell how it ends up.
-          And with only a few days to go to WWDC where its been rumoured that
-          they are going to announce this move it seems it won't be long until
-          we find out, unless of course the leaks were wrong and Apple does not
+          without its ups and downs. Only time will tell how it ends up. And
+          with only a few days to go to WWDC where its been rumoured that they
+          are going to announce this move it seems it won't be long until we
+          find out, unless of course the leaks were wrong and Apple does not
           move to ARM and then me and a load of other people are gonna look like
           a bunch of idiots.
         </p>
